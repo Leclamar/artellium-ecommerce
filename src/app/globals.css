@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #F9F7F7;
   --foreground: #171717;
 }
 
@@ -12,15 +12,89 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
-    --background: #0a0a0a;
+    --background: #F9F7F7;
     --foreground: #ededed;
   }
+}
+
+*{
+  box-sizing: border-box;
+  align-content: center
+}
+
+header{
+  color: #112D4E;
+  font-weight: 700;
+}
+
+article{
+  margin-right: 6rem;
+  margin-left: 6rem;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Inter, sans-serif;
+}
+
+nav{
+  background: #F9F7F7;
+}
+
+.active-btn{
+  background: #112D4E;
+  color: #F9F7F7;
+}
+
+.gradient-btn{
+  background: linear-gradient(90deg, #112D4E 0%, #3F72AF 100%);
+}
+
+.login-bg{
+  background: linear-gradient(243.18deg, #DBE2EF 0%, #112D4E 100%);
+}
+
+.ellium-txt{
+  color: #165BAC
+}
+
+.art-txt{
+  color: #112D4E
+}
+
+.menu{
+  padding: 5px 1rem;
+}
+
+.btn-mid-blue{
+  background-color: #3F72AF;
+  color: #DBE2EF;
+  border-radius: 0.25rem;
+}
+
+.btn-light-blue{
+  background-color: #6BA2E5;
+  color: #DBE2EF;
+  border-radius: 0.25rem;
+}
+
+.btn-dark-blue{
+  background-color: #112D4E;
+  color: #DBE2EF;
+  border-radius: 0.25rem;
+}
+
+#commission-btn{
+  color: #3F72AF;
+  border-color: ##3F72AF;
+}
+
+.items{
+  display: flex;
+  flex-wrap: wrap;
+  gap: calc(var(--spacing) * 4);
+  justify-content: center;
 }
