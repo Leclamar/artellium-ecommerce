@@ -11,6 +11,7 @@
   "dependencies": {
     "@clerk/nextjs": "^6.23.2",
     "inngest": "^3.40.0",
+    "inngest-cli": "^1.8.2",
     "mongoose": "^8.16.1",
     "next": "15.3.4",
     "react": "^19.0.0",
