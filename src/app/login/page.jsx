@@ -21,7 +21,7 @@ const Login = () => {
                         <div className="border w-full h-0"></div>
                     </div>
 
-                    <form className="grid">
+                    <form className="grid text-sm">
                         <label className="my-1">Email</label>
                         <input className="border p-2 rounded-sm" type="text" placeholder="Email adress"/>
 
